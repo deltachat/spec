@@ -1,4 +1,6 @@
-# Email-chat specification v0.9.1
+# Email-chat specification
+
+Version 0.9.1
 
 This document describes how emails can be used to implement typical messenger functions while staying compatible to existing MUAs.
 
