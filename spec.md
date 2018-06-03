@@ -1,6 +1,6 @@
 # Email-chat specification
 
-Version 0.9.1
+Version 0.17.0
 
 This document describes how emails can be used to implement typical messenger functions while staying compatible to existing MUAs.
 
@@ -32,8 +32,7 @@ If Memoryhole is not used, the subject of encrypted messages SHOULD be replaced 
 Messengers MUST add a `Chat-Version: 1.0` header to outgoing messages.
 For filtering and smart appearance of the messages in normal MUAs,
 the `Subject` header SHOULD start with the characters `Chat:` and SHOULD be an excerpt of the message.
-
-Outgoing messages SHOULD be moved to the folder `Chats`.
+Replies to messages MAY follow the typical `Re:`-format.
 
     From: sender@domain
     To: rcpt@domain
@@ -57,8 +56,6 @@ Messenger SHOULD show the `Subject` if the message comes from a normal MUA toget
 The email-body SHOULD be converted to plain text, full-quotes and similar regions SHOULD be cut.
 
 Attachments SHOULD be shown where possible.  If an attachment cannot be shown, a non-distracting warning SHOULD be printed.
-
-Incoming messages from compatible messengers SHOULD be moved to the folder `Chats`.
 
 
 # Groups
