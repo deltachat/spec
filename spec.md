@@ -21,7 +21,7 @@ This document describes how emails can be used to implement typical messenger fu
 
 Messages SHOULD be encrypted by the [Autocrypt](https://autocrypt.org/level1.html) standard;  `prefer-encrypt=mutual` MAY be set by default.
 
-Meta data (at least the subject and all chat-headers) SHOULD be encrypted by the [Memoryhole](http://modernpgp.org/memoryhole/) standard.
+Meta data (at least the subject and all chat-headers) SHOULD be encrypted by the [Memoryhole](https://github.com/autocrypt/memoryhole) standard.
 If Memoryhole is not used, the subject of encrypted messages SHOULD be replaced by the string
 `Chat: Encrypted message` where the part after the colon MAY be localized.
 
