@@ -271,3 +271,11 @@ Older messenger may use the header fields `X-MrMsg` (instead of `Chat-Version`),
 
 For outgoing messages, messenger MAY send the old names together with the new ones.
 For incoming messages, messenger MAY recognize the old names but MUST prefer the new ones on conflicts.
+
+
+# License
+
+Licensed under the CC0, see [LICENSE](./LICENSE) file for details.
+Different implementations and libraries are licensed under different licenses.
+
+Copyright © 2017, 2018 Delta Chat contributors.
