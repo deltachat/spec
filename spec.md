@@ -146,7 +146,10 @@ To remove a member:
 
 ## Change group name
 
-To change the group-name, the messenger MUST send a message with the action header `Chat-Group-Name-Changed: 1` to all group members.
+To change the group-name,
+the messenger MUST send the action header `Chat-Group-Name-Changed`
+with the value set to the old group name to all group members.
+The new group name goes to the header `Chat-Group-Name`.
 
 The messenger SHOULD send an explicit mail for each name change.
 The body of the message SHOULD contain a localized description about what happened
@@ -157,7 +160,7 @@ and the message SHOULD appear as a message or action from the sender.
     Chat-Version: 1.0
     Chat-Group-ID: 1234xyZ
     Chat-Group-Name: Our Group
-    Chat-Group-Name-Changed: 1
+    Chat-Group-Name-Changed: My Group
     Message-ID: Gr.1234xyZ.0004@domain
     Subject: Chat: Our Group: Hello, ...
 
