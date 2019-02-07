@@ -34,15 +34,25 @@ For filtering and smart appearance of the messages in normal MUAs,
 the `Subject` header SHOULD start with the characters `Chat:` and SHOULD be an excerpt of the message.
 Replies to messages MAY follow the typical `Re:`-format.
 
+The body MAY contain text which MUST have the content type `text/plain`
+or `mulipart/alternative` containing `text/plain`.
+
+The text MAY be divided into a user-text-part and a footer-part using the
+line `-- ` (minus, minus, space, lineend).
+
+The user-text-part MUST contain only user generated content.
+User generated content are eg. texts a user has actually typed or pasted or
+forwarded from another user.
+Full quotes, footers or sth. like that MUST NOT go to the user-text-part.
+
     From: sender@domain
     To: rcpt@domain
     Chat-Version: 1.0
+    Content-Type: text/plain
     Subject: Chat: Hello ...
 
     Hello world!
 
-Although it is not part of this spec, we want to note that it may be needed to encode the subject and other header fields with text
-(eg. using the encoded-word mechanism).
 
 
 
