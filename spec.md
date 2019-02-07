@@ -267,18 +267,9 @@ We define the effective date of a message as the sending time of the message as 
 or the time of first receipt if that date is in the future or unavailable.
 
 
-## Old header fields
-
-Older messenger may use the header fields `X-MrMsg` (instead of `Chat-Version`), `X-MrPredecessor`, `X-MrGrpId`, `X-MrGrpName`,
-`X-MrRemoveFromGrp`, `X-MrAddToGrp`, `X-MrGrpNameChanged`, `X-MrVoiceMessage` and `X-MrDurationMs`.
-
-For outgoing messages, messenger MAY send the old names together with the new ones.
-For incoming messages, messenger MAY recognize the old names but MUST prefer the new ones on conflicts.
-
-
 # License
 
 Licensed under the CC0, see [LICENSE](./LICENSE) file for details.
 Different implementations and libraries are licensed under different licenses.
 
-Copyright © 2017, 2018 Delta Chat contributors.
+Copyright © 2017-2019 Delta Chat contributors.
