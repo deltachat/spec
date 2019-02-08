@@ -84,8 +84,8 @@ which SHOULD be anonymized or just a placeholder.
 Incoming forwarded messages are detected by the header.
 The messenger SHOULD mark these messages in a way that it becomes obvious
 that the message is not created by the sender.
-The original sender SHOULD NOT be displayed as it will be anonymized by most
-messengers anyway.
+Note that most messengers do not show the original sender with forwarded messages
+but MUAs typically expose the sender in the UI.
 
 
 # Groups
