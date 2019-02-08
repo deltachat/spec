@@ -7,4 +7,4 @@ License
 Licensed under the CC0, see [LICENSE](./LICENSE) file for details.
 Different implementations and libraries are licensed under different licenses.
 
-Copyright © 2017, 2018 Delta Chat contributors.
+Copyright © 2017-2019 Delta Chat contributors.
