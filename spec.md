@@ -68,6 +68,36 @@ The email-body SHOULD be converted to plain text, full-quotes and similar region
 Attachments SHOULD be shown where possible.  If an attachment cannot be shown, a non-distracting warning SHOULD be printed.
 
 
+# Forwarded messages
+
+Forwarded messages are outgoing messages that contain a forwarded-header
+before the user generated content.
+
+The forwarded header MUST contain two lines: 
+The first line contains the text
+`---------- Forwarded message ----------`
+(10 minus, space, text `Forwarded message`, space, 10 minus). 
+The second line starts with `From: ` followed by the original sender
+which SHOULD be anonymized or just a placeholder.
+
+    From: sender@domain
+    To: rcpt@domain
+    Chat-Version: 1.0
+    Content-Type: text/plain
+    Subject: Chat: Forwarded message
+
+    ---------- Forwarded message ----------
+    From: Messenger
+
+    Hello world!
+
+Incoming forwarded messages are detected by the header.
+The messenger SHOULD mark these messages in a way that it becomes obvious
+that the message is not created by the sender.
+Note that most messengers do not show the original sender with forwarded messages
+but MUAs typically expose the sender in the UI.
+
+
 # Groups
 
 Groups are chats with usually more than one recipient, each defined by an email-address.
