@@ -7,6 +7,7 @@ This document describes how emails can be used to implement typical messenger fu
 - [Encryption](#encryption)
 - [Outgoing messages](#outgoing-messages)
 - [Incoming messages](#incoming-messages)
+- [Forwarded messages](#forwarded-messages)
 - [Groups](#groups)
     - [Outgoing group messages](#outgoing-group-messages)
     - [Incoming group messages](#incoming-group-messages)
