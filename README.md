@@ -1,4 +1,4 @@
-This repository describes the protocol used to realize _chats over email_
+This repository describes the protocol used to realize **chats over email**
 in [spec.md](./spec.md).
 
 License
